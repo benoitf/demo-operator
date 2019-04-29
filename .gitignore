@@ -1,5 +1,5 @@
 # Goland
-.idea
+/.idea
 # Temporary Build Files
 build
 build/_output
