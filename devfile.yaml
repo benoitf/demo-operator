@@ -37,7 +37,7 @@ commands:
     actions:
       - type: exec
         component: dev
-        command: "go build -o build/demo-operator cmd/manager/main.go"
+        command: "echo '[INFO]: Compiling binary' && go build -o build/demo-operator cmd/manager/main.go && echo '[INFO]: Task finished'"
         workdir: /projects/src/github.com/eivantsov/demo-operator
   - name: run_operator
     actions:
@@ -49,11 +49,11 @@ commands:
     actions:
       - type: exec
         component: dev
-        command: "buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile ."
+        command: "echo '[INFO]: Building an image...' && buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile . && echo '[INFO]: Done!'"
         workdir: /projects/src/github.com/eivantsov/demo-operator
   - name: push_container_image
     actions:
       - type: exec
         component: dev
-        command: "buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator"
+        command: "echo '[INFO]: Pushing image to an internal registry' && buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator && echo '[INFO]: Image pushed'"
 
