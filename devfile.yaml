@@ -17,6 +17,8 @@ components:
   - type: chePlugin
     id: ms-vscode.go:0.9.2
     memoryLimit: 3Gi
+  - type: chePlugin
+    id: redhat.vscode-yaml:0.3.0
   - type: dockerimage
     alias: dev
     image: eivantsov/golang-dev
