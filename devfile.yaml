@@ -39,7 +39,7 @@ commands:
         component: dev
         command: go build -o build/demo-operator cmd/manager/main.go
         workdir: /projects/src/github.com/eivantsov/che-operator
-  - name: run
+  - name: run operator
     actions:
       - type: exec
         component: dev
