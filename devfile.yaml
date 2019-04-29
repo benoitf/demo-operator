@@ -33,27 +33,27 @@ commands:
       - type: exec
         component: k8s
         command: "export inclusterconfig='/var/run/secrets/kubernetes.io/serviceaccount' && kubectl config set-cluster default --server=https://kubernetes.default.svc --certificate-authority=$inclusterconfig/ca.crt && kubectl config set-context default --cluster=default && token=$(cat $inclusterconfig/token) && kubectl config set-credentials developer --token=$token && kubectl config set-context default --user=developer && kubectl config use-context default"
-#  - name: compile binary
-#    actions:
-#      - type: exec
-#        component: dev
-#        command: "go build -o build/demo-operator cmd/manager/main.go"
-#        workdir: /projects/src/github.com/eivantsov/che-operator
-#  - name: run operator
-#    actions:
-#      - type: exec
-#        component: dev
-#        command: "export WATCH_NAMESPACE='che' && ./demo-operator"
-#        workdir: /projects/src/github.com/eivantsov/che-operator/build
-#  - name: build container image
-#    actions:
-#      - type: exec
-#        component: dev
-#        command: "buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile ."
-#        workdir: /projects/src/github.com/eivantsov/che-operator
-#  - name: push container image
-#    actions:
-#      type: exec
-#      component: dev
-#      command: "buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator"
+  - name: compile_binary
+    actions:
+      - type: exec
+        component: dev
+        command: "go build -o build/demo-operator cmd/manager/main.go"
+        workdir: /projects/src/github.com/eivantsov/che-operator
+  - name: run_operator
+    actions:
+      - type: exec
+        component: dev
+        command: "export WATCH_NAMESPACE='che' && ./demo-operator"
+        workdir: /projects/src/github.com/eivantsov/che-operator/build
+  - name: build_container_image
+    actions:
+      - type: exec
+        component: dev
+        command: "buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile ."
+        workdir: /projects/src/github.com/eivantsov/che-operator
+  - name: push_container_image
+    actions:
+      type: exec
+      component: dev
+      command: "buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator"
 
