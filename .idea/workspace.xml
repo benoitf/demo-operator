@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ec82de8-904b-4421-b4ad-d758dad3981a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.theia/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/rbac.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/controller/appservice/create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/controller/appservice/pod.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/controller/appservice/route.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/controller/appservice/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/crds/app_v1alpha1_appservice_cr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/crds/app_v1alpha1_appservice_cr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/operator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/operator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/role.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/role_binding.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/service_account.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/devfile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devfile.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/apis/app/v1alpha1/appservice_types.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/apis/app/v1alpha1/appservice_types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/controller/appservice/appservice_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/controller/appservice/appservice_controller.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,14 +26,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/devfile.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+            <state relative-caret-position="101">
+              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,6 +145,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/deploy/operator.yaml" />
         <option value="$PROJECT_DIR$/.theia/launch.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/devfile.yaml" />
       </list>
     </option>
@@ -303,6 +291,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1012" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25320512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -465,12 +454,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devfile.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        <state relative-caret-position="101">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
