@@ -2,16 +2,14 @@ package appservice
 
 import (
 	"context"
-
+	"fmt"
 	appv1alpha1 "github.com/eivantsov/demo-operator/pkg/apis/app/v1alpha1"
+	routev1 "github.com/openshift/api/route/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
@@ -39,12 +37,15 @@ func newReconciler(mgr manager.Manager) reconcile.Reconciler {
 
 // add adds a new Controller to mgr with r as the reconcile.Reconciler
 func add(mgr manager.Manager, r reconcile.Reconciler) error {
+
 	// Create a new controller
 	c, err := controller.New("appservice-controller", mgr, controller.Options{Reconciler: r})
 	if err != nil {
 		return err
 	}
-
+	if err := routev1.AddToScheme(mgr.GetScheme()); err != nil {
+		_ = fmt.Errorf("Failed to add OpenShift route to scheme %s", err)
+	}
 	// Watch for changes to primary resource AppService
 	err = c.Watch(&source.Kind{Type: &appv1alpha1.AppService{}}, &handler.EnqueueRequestForObject{})
 	if err != nil {
@@ -54,6 +55,22 @@ func add(mgr manager.Manager, r reconcile.Reconciler) error {
 	// TODO(user): Modify this to be the types you create that are owned by the primary resource
 	// Watch for changes to secondary resource Pods and requeue the owner AppService
 	err = c.Watch(&source.Kind{Type: &corev1.Pod{}}, &handler.EnqueueRequestForOwner{
+		IsController: true,
+		OwnerType:    &appv1alpha1.AppService{},
+	})
+	if err != nil {
+		return err
+	}
+
+	err = c.Watch(&source.Kind{Type: &corev1.Service{}}, &handler.EnqueueRequestForOwner{
+		IsController: true,
+		OwnerType:    &appv1alpha1.AppService{},
+	})
+	if err != nil {
+		return err
+	}
+
+	err = c.Watch(&source.Kind{Type: &routev1.Route{}}, &handler.EnqueueRequestForOwner{
 		IsController: true,
 		OwnerType:    &appv1alpha1.AppService{},
 	})
@@ -99,53 +116,43 @@ func (r *ReconcileAppService) Reconcile(request reconcile.Request) (reconcile.Re
 		return reconcile.Result{}, err
 	}
 
-	// Define a new Pod object
-	pod := newPodForCR(instance)
-
-	// Set AppService instance as the owner and controller
-	if err := controllerutil.SetControllerReference(instance, pod, r.scheme); err != nil {
-		return reconcile.Result{}, err
-	}
-
-	// Check if this Pod already exists
-	found := &corev1.Pod{}
-	err = r.client.Get(context.TODO(), types.NamespacedName{Name: pod.Name, Namespace: pod.Namespace}, found)
-	if err != nil && errors.IsNotFound(err) {
-		reqLogger.Info("Creating a new Pod", "Pod.Namespace", pod.Namespace, "Pod.Name", pod.Name)
-		err = r.client.Create(context.TODO(), pod)
-		if err != nil {
-			return reconcile.Result{}, err
-		}
-
-		// Pod created successfully - don't requeue
-		return reconcile.Result{}, nil
-	} else if err != nil {
-		return reconcile.Result{}, err
-	}
-
-	// Pod already exists - don't requeue
-	reqLogger.Info("Skip reconcile: Pod already exists", "Pod.Namespace", found.Namespace, "Pod.Name", found.Name)
-	return reconcile.Result{}, nil
-}
-
-// newPodForCR returns a busybox pod with the same name/namespace as the cr
-func newPodForCR(cr *appv1alpha1.AppService) *corev1.Pod {
 	labels := map[string]string{
-		"app": cr.Name,
+		"app": instance.Name,
 	}
-	return &corev1.Pod{
-		ObjectMeta: metav1.ObjectMeta{
-			Name:      cr.Name + "-pod",
-			Namespace: cr.Namespace,
-			Labels:    labels,
-		},
-		Spec: corev1.PodSpec{
-			Containers: []corev1.Container{
-				{
-					Name:    "nginx",
-					Image:   "nginx",
-				},
-			},
-		},
+
+	// Define a new Pod object
+	pod := newPodForCR(instance, labels)
+	// create a new Pod
+	if err := r.createNewPod(instance, pod, request); err != nil {
+		return reconcile.Result{}, err
 	}
+
+	// define a new Service object
+	service := newService(instance, instance.Name, []string{"demo"}, []int32{80}, labels)
+	// create a new Service object
+	if err := r.createNewService(instance, service, request); err != nil {
+		reqLogger.Error(err, "Failed to create service")
+		return reconcile.Result{}, err
+	}
+
+	//route := newRoute(instance, instance.Name, instance.Name, 80, labels)
+	//if err := r.createNewRoute(instance, route, request); err != nil {
+	//	reqLogger.Error(err, "Failed to create route")
+	//	return reconcile.Result{}, err
+	//}
+	//
+	//appRoute := &routev1.Route{}
+	//time.Sleep(time.Duration(1) * time.Second)
+	//err = r.client.Get(context.TODO(), types.NamespacedName{Name: route.Name, Namespace: route.Namespace}, appRoute)
+	//if len(instance.Status.Url) < 1 {
+	////if len(instance.Status.Url) < 1 || instance.Status.Url != "http://" + appRoute.Spec.Host {
+	//
+	//		instance.Status.Url = "http://" + appRoute.Spec.Host
+	//	reqLogger.Info("Updating AppService status")
+	//	if err := r.client.Status().Update(context.TODO(), instance); err != nil {
+	//		reqLogger.Error(err, "Updating AppService status")
+	//	}
+	//}
+
+	return reconcile.Result{}, nil
 }

@@ -16,13 +16,13 @@ spec:
       containers:
         - name: demo-operator
           # Replace this with the built image name
-          image: demo/operator
+          image: eivantsov/demo-operator
           ports:
-          - containerPort: 60000
-            name: metrics
+            - containerPort: 60000
+              name: metrics
           command:
-          - demo-operator
-          imagePullPolicy: Always
+            - demo-operator
+          imagePullPolicy: IfNotPresent
           readinessProbe:
             exec:
               command:
