@@ -37,7 +37,7 @@ commands:
     actions:
       - type: exec
         component: dev
-        command: "echo \"Compiling binary\" && go build -o build/demo-operator cmd/manager/main.go && echo \"Task finished\""
+        command: "echo \"Compiling binary. Please wait...\" && go build -o build/demo-operator cmd/manager/main.go && echo \"Compilation finished\""
         workdir: /projects/src/github.com/eivantsov/demo-operator
   - name: run_operator
     actions:

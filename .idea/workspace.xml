@@ -2,7 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ec82de8-904b-4421-b4ad-d758dad3981a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devfile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devfile.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/crd.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/add/crd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/build.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/build.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/generate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/generate/k8s.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/generate/k8s.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/new.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/print_deps.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/print_deps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/test/cluster.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/test/cluster.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/test/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/test/local.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/up/local.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/cmd/up/local.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/commands/operator-sdk/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/internal/util/fileutil/file_util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/internal/util/fileutil/file_util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/internal/util/projutil/project_util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/internal/util/projutil/project_util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/reconcile.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/reconcile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/status/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/controller/status/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/operator/operator.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/operator/operator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/kubeconfig/kubeconfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/kubeconfig/kubeconfig.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/kubectl.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/kubectl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/proxy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/requestfactory/requestinfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/proxy/requestfactory/requestinfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/eventapi/eventapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/eventapi/eventapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/eventapi/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/eventapi/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/fake/runner.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/fake/runner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/internal/inputdir/inputdir.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/internal/inputdir/inputdir.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/runner.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ansible/runner/runner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/controller/reconcile.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/controller/reconcile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/engine/ownerref.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/engine/ownerref.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/internal/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/release/manager.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/release/manager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/release/manager_factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/release/manager_factory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/helm/release/new.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/k8sutil/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/k8sutil/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/k8sutil/k8sutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/k8sutil/k8sutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/leader/leader.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/leader/leader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/metrics/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/metrics/metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/metrics/service-monitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/metrics/service-monitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ready/ready.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/ready/ready.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/addtoscheme.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/addtoscheme.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/dockerfile.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/galaxy_init.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/operator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/playbook.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/playbook.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/watches.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/ansible/watches.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/build_dockerfile.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/build_dockerfile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/cmd.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/cmd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/controller_kind.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/controller_kind.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/cr.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/cr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/crd.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/crd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/gopkgtoml.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/gopkgtoml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/chart.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/chart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/dockerfile.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/dockerfile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/operator.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/operator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/watches.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/helm/watches.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/input/input.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/input/input.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/operator.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/operator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/resource.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/resource.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/scaffold.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/scaffold.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/test_setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/test_setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/scaffold/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/e2eutil/wait_util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/e2eutil/wait_util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/framework.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/framework.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/main_entry.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/main_entry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/resource_creator.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/test/resource_creator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/tls/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/pkg/tls/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/ansible-operator/cmd/ansible-operator/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/helm-operator/cmd/helm-operator/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/test-framework/cmd/manager/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/test-framework/cmd/manager/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/test-framework/pkg/controller/memcached/memcached_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/test/test-framework/pkg/controller/memcached/memcached_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/version/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/operator-framework/operator-sdk/version/version.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,16 +110,25 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devfile.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/devfile.yaml">
+        <entry file="file://$PROJECT_DIR$/Gopkg.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="510">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -91,18 +182,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pkg/controller/appservice/create.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#20#213#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pkg/apis/app/v1alpha1/appservice_types.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -147,6 +226,7 @@
         <option value="$PROJECT_DIR$/.theia/launch.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/devfile.yaml" />
+        <option value="$PROJECT_DIR$/Gopkg.toml" />
       </list>
     </option>
   </component>
@@ -291,7 +371,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1012" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25320512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -456,14 +535,21 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devfile.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="398">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gopkg.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
         </state>
       </provider>
     </entry>
