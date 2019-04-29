@@ -28,7 +28,7 @@ components:
       - name: GOCACHE
         value: $(GOPATH)/.cache
 commands:
-  - name: configure kubeconfig
+  - name: configure_kubeconfig
     actions:
       - type: exec
         component: k8s
