@@ -39,21 +39,21 @@ commands:
         component: dev
         command: "go build -o build/demo-operator cmd/manager/main.go"
         workdir: /projects/src/github.com/eivantsov/che-operator
-  - name: run_operator
-    actions:
-      - type: exec
-        component: dev
-        command: "export WATCH_NAMESPACE='che' && ./demo-operator"
-        workdir: /projects/src/github.com/eivantsov/che-operator/build
-  - name: build_container_image
-    actions:
-      - type: exec
-        component: dev
-        command: "buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile ."
-        workdir: /projects/src/github.com/eivantsov/che-operator
-  - name: push_container_image
-    actions:
-      type: exec
-      component: dev
-      command: "buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator"
-
+#  - name: run_operator
+#    actions:
+#      - type: exec
+#        component: dev
+#        command: "export WATCH_NAMESPACE='che' && ./demo-operator"
+#        workdir: /projects/src/github.com/eivantsov/che-operator/build
+#  - name: build_container_image
+#    actions:
+#      - type: exec
+#        component: dev
+#        command: "buildah bud -t 172.30.1.1:5000/openshift/demo-operator -f build/Dockerfile ."
+#        workdir: /projects/src/github.com/eivantsov/che-operator
+#  - name: push_container_image
+#    actions:
+#      type: exec
+#      component: dev
+#      command: "buildah push --tls-verify=false --creds developer:$(cat /var/run/secrets/kubernetes.io/serviceaccount/token) 172.30.1.1:5000/openshift/demo-operator"
+#
