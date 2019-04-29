@@ -144,6 +144,8 @@ func (r *ReconcileAppService) Reconcile(request reconcile.Request) (reconcile.Re
 	//appRoute := &routev1.Route{}
 	//time.Sleep(time.Duration(1) * time.Second)
 	//err = r.client.Get(context.TODO(), types.NamespacedName{Name: route.Name, Namespace: route.Namespace}, appRoute)
+	// 	instance = &appv1alpha1.AppService{}
+	//	err = r.client.Get(context.TODO(), request.NamespacedName, instance)
 	//if len(instance.Status.Url) < 1 {
 	////if len(instance.Status.Url) < 1 || instance.Status.Url != "http://" + appRoute.Spec.Host {
 	//

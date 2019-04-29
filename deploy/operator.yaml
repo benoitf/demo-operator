@@ -4,6 +4,8 @@ metadata:
   name: demo-operator
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       name: demo-operator
@@ -15,7 +17,7 @@ spec:
       serviceAccountName: demo-operator
       containers:
         - name: demo-operator
-          # Replace this with the built image name
+          # image: 172.30.1.1:5000/openshift/demo-operator
           image: eivantsov/demo-operator
           ports:
             - containerPort: 60000
