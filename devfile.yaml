@@ -8,17 +8,17 @@ projects:
       location: https://github.com/eivantsov/demo-operator.git
 components:
   - type: cheEditor
-    id: org.eclipse.che.editor.theia:next
+    id: org.eclipse.che.editor.theia/next
   - type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
+    id: che-machine-exec-plugin/0.0.1
   - type: chePlugin
     alias: k8s
-    id: ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17
+    id: ms-kubernetes-tools.vscode-kubernetes-tools/0.1.17
   - type: chePlugin
-    id: ms-vscode.go:0.9.2
+    id: ms-vscode.go/0.9.2
     memoryLimit: 3Gi
   - type: chePlugin
-    id: redhat.vscode-yaml:0.3.0
+    id: redhat.vscode-yaml/0.3.0
   - type: dockerimage
     alias: dev
     image: eivantsov/golang-dev
